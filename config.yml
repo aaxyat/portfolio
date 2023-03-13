@@ -1,3 +1,48 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: 'https://ayushb.com/'
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+relativeURLs: true
+disableRSS: true
+enableRobotsTXT: true
+editor: nano
+languageCode: en
+language: en
+theme: vncnt-hugo
+title: Ayush Bhattarai · Landing Page
+_merge: none
+permalinks:
+  fixed: ':title/'
+  posts: 'posts/:slug/'
+params:
+  author: Ayush Bhattarai
+  description: Landing Page
+  bio: |-
+    First Row.  
+    Second Row.
+  avatar: img/avatar.jpg
+  favicon: img/favicon.ico
+  error404: There is no such page.
+  contact:
+    '0':
+      name: ello
+      icon: ello
+      style: fab
+      link: ''
+    '1':
+      name: hiking club
+      icon: hiking
+      style: fas
+      link: 'https://local-hiking.club'
+    github: 'https://github.com/jdoe'
+    instagram: 'https://instagram.com/jdoe'
+    twitter: 'https://twitter.com/jdoe'
+    email:
+      name: email
+      icon: envelope
+      style: fas
+      link: 'mailto:john.doe@example.com'
+    mastodon:
+      style: fab
+      link: 'https://example.social/@jdoe'
+      rel-me: true
